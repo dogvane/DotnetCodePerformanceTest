@@ -40,7 +40,7 @@ namespace TestCode.Collection
 
     public class BaseListAndDictionary
     {
-        int capacity = 5;
+        int capacity = 0;
         int testCount = 1000;
         int idRang = 1000;
 

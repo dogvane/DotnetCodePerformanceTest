@@ -8,6 +8,11 @@ namespace TestCode
     {
         static void Main(string[] args)
         {
+            BenchmarkRunner.Run<ListAndDictionary50>();
+
+            BenchmarkRunner.Run<IntListAndDictionary20>();
+            return;
+
             TestString();
 
             TestInt();
@@ -15,18 +20,18 @@ namespace TestCode
 
         private static void TestString()
         {
-            var summary = BenchmarkRunner.Run<ListAndDictionary5>();
-            summary = BenchmarkRunner.Run<ListAndDictionary10>();
-            summary = BenchmarkRunner.Run<ListAndDictionary20>();
-            summary = BenchmarkRunner.Run<ListAndDictionary50>();
+            BenchmarkRunner.Run<ListAndDictionary5>();
+            BenchmarkRunner.Run<ListAndDictionary10>();
+            BenchmarkRunner.Run<ListAndDictionary20>();
+            BenchmarkRunner.Run<ListAndDictionary50>();
         }
 
         private static void TestInt()
         {
-            var summary = BenchmarkRunner.Run<IntListAndDictionary5>();
-            summary = BenchmarkRunner.Run<IntListAndDictionary10>();
-            summary = BenchmarkRunner.Run<IntListAndDictionary20>();
-            summary = BenchmarkRunner.Run<IntListAndDictionary50>();
+            BenchmarkRunner.Run<IntListAndDictionary5>();
+            BenchmarkRunner.Run<IntListAndDictionary10>();
+            BenchmarkRunner.Run<IntListAndDictionary20>();
+            BenchmarkRunner.Run<IntListAndDictionary50>();
         }
     }
 }
